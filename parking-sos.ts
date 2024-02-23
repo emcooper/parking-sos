@@ -2,6 +2,7 @@ import puppeteer from "puppeteer";
 import { Twilio } from "twilio";
 import { config } from 'dotenv';
 
+//`ts-node parking-sos.ts`
 async function checkParkingAvailability() {
   const browser = await puppeteer.launch({ headless: true }); // Launch the browser in headless mode. Set to false to see the browser.
   const page = await browser.newPage(); // Open a new page.
